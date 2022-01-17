@@ -1,0 +1,1 @@
+LaundryApp es una app diseñada para que los usuarios de la lavanderia de un edificio puedan ingresar cuando los lavarropas y secadoras esten en uso, de esta manera evitaremos que los usuarios se acerquen a la lavanderia y no esten disponibles. Nos permitira ver que esta en uso y que no, ademas de poder ver el tiempo restante para su utilizacion.
