@@ -1,6 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
 .logo {
     color: #80bc5a;
-    font-size: 35px;
+    font-size: 3.5rem;
     padding: 0 80px;
     font-weight: bold;
 }
@@ -9,3 +18,17 @@
     background-color: #004895;
     border: solid #004895
 }
+
+.form-container {
+    width: 40vw;
+    height: 40vh;
+    border: solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 5px 5px;
+    
+}
+
