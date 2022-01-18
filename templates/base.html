@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>
-        {% block title %} LaundryApp | {% endblock %}
-    </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}} ">
-</head>
-<body>
+{% extends 'bootstrap/base.html' %}
+
+{% block head %}
+    {{ super() }}
+        <title>
+            {% block title %} LaundryApp | {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}} ">
+{% endblock %}
+
+{% block body %}
+    {% block navbar %}
+        {% include 'navbar.html' %}
+    {% endblock %}
+
     {% block content %}
     
     {% endblock %}
-</body>
-</html>
+{% endblock %}
