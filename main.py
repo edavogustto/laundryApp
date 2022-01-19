@@ -1,8 +1,10 @@
 from ensurepip import bootstrap
 from wsgiref.validate import validator
 from flask import Flask, request, make_response, redirect, render_template, session, url_for, flash
+from flask_login import login_required
 from flask_bootstrap import Bootstrap
 from app import create_app
+from app.firestore_service import get_users
 
 app = create_app()
 
@@ -21,6 +23,7 @@ def index():
     return response
 
 @app.route('/hello', methods=['GET'])
+@login_required
 def hello():
     user_ip = session.get('user_ip')
     username = session.get('username')
@@ -29,6 +32,7 @@ def hello():
         'user_ip': user_ip,
         'username' : username
     }
+
 
     return render_template('hello.html', **context)
 

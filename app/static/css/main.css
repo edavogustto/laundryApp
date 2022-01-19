@@ -33,6 +33,6 @@ html {
 }
 
 .alert, .alert-success, .alert-dismissible {
-    margin-left: 5%;
+    margin: 0 auto 20px;
     width: 60%;
 }

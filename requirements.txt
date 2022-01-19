@@ -1,4 +1,6 @@
 flask
 flask-bootstrap
 flask-wtf
-blinkers
+blinker
+firebase-admin
+flask-login
