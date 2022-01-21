@@ -6,7 +6,13 @@
 {% endblock %}
 
 {% block content %}
+    <h1>Inicia Sesión</h1>
     <div class="form-container">
         {{ wtf.quick_form(login_form) }}
+        <h4>¿No tienes una cuenta?</h4>
+        <a href="signup">
+            <button class="login-button">Registrate</button>
+        </a>
+        
     </div>
 {% endblock %}

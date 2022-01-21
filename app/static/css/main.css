@@ -25,6 +25,8 @@ html {
     border: solid black;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -35,4 +37,14 @@ html {
 .alert, .alert-success, .alert-dismissible {
     margin: 0 auto 20px;
     width: 60%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.login-button {
+    width: 15rem;
+    height: 3rem;
+
 }
